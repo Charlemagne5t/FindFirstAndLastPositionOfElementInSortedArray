@@ -31,4 +31,23 @@ public class SolutionTest {
 
         Assert.assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void searchRangeTest4() {
+        int[] nums = {1,1,2};
+        int target = 1;
+        int[] expected = {0, 1};
+        int[] actual = new Solution().searchRange(nums, target);
+
+        Assert.assertArrayEquals(expected, actual);
+    }
+    @Test
+    public void searchRangeTest5() {
+        int[] nums = {1,2,3,3,3,3,4,5,9};
+        int target = 3;
+        int[] expected = {2, 5};
+        int[] actual = new Solution().searchRange(nums, target);
+
+        Assert.assertArrayEquals(expected, actual);
+    }
 }
